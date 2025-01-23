@@ -2,24 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Cards */
-.card-enhanced {
-	@apply card border border-surface-200-800;
-}
-[data-theme='catppuccin'] .card-enhanced,
-[data-theme='terminus'] .card-enhanced,
-[data-theme='vox'] .card-enhanced,
-[data-theme='rocket'] .card-enhanced {
-	@apply bg-surface-100/30 dark:bg-surface-900/30;
-}
-[data-theme='concord'] .card-enhanced,
-[data-theme='legacy'] .card-enhanced,
-[data-theme='mint'] .card-enhanced,
-[data-theme='vintage'] .card-enhanced {
-	@apply bg-surface-50/30 dark:bg-surface-950/30;
-}
-
-/* Filled Cards */
-.card-filled-enhanced {
-	@apply card preset-filled-primary-500;
+body {
+	/* OPTIONAL: Background Mesh Gradient */
+	/* https://next.skeleton.dev/docs/design/themes#backgrounds */
+	/* prettier-ignore */
+	background-image:
+		radial-gradient(at 0% 25%, rgba(var(--color-primary-500) / 0.10) 0px, transparent 30%),
+		radial-gradient(at 15% 06%, rgba(var(--color-success-500) / 0.05) 0px, transparent 30%);
+	background-attachment: fixed;
 }
