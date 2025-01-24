@@ -59,7 +59,7 @@
 	</section>
 
 	<!-- Buttons -->
-	<!-- https://next.skeleton.dev/docs/tailwind/buttons -->
+	<!-- https://skeleton.dev/docs/tailwind/buttons -->
 	<section class="space-y-4">
 		<h3 class="h3">Buttons</h3>
 		<div class={previewCardClasses}>
@@ -96,7 +96,7 @@
 	</section>
 
 	<!-- Card -->
-	<!-- https://next.skeleton.dev/docs/tailwind/cards -->
+	<!-- https://skeleton.dev/docs/tailwind/cards -->
 	<section class="space-y-4">
 		<h3 class="h3">Card</h3>
 		<div class={previewCardClasses}>
@@ -130,7 +130,7 @@
 	</section>
 
 	<!-- Forms -->
-	<!-- https://next.skeleton.dev/docs/tailwind/forms -->
+	<!-- https://skeleton.dev/docs/tailwind/forms -->
 	<section class="space-y-4">
 		<h3 class="h3">Forms</h3>
 		<div class={previewCardClasses}>
@@ -230,7 +230,7 @@
 	</section>
 
 	<!-- ProgressRing -->
-	<!-- https://next.skeleton.dev/docs/components/progress-ring/svelte -->
+	<!-- https://skeleton.dev/docs/components/progress-ring/svelte -->
 	<section class="space-y-4">
 		<h3 class="h3">Progress Rings</h3>
 		<div class={previewCardClasses}>
@@ -243,7 +243,7 @@
 	</section>
 	
 	<!-- <Segment -->
-	<!-- https://next.skeleton.dev/docs/components/segment/svelte -->
+	<!-- https://skeleton.dev/docs/components/segment/svelte -->
 	<section class="space-y-4">
 		<h3 class="h3">Segment Controls</h3>
 		<div class={previewCardClasses}>
@@ -260,7 +260,7 @@
 	</section>
 
 	<!-- Slider -->
-	<!-- https://next.skeleton.dev/docs/components/slider/svelte -->
+	<!-- https://skeleton.dev/docs/components/slider/svelte -->
 	<section class="space-y-4">
 		<h3 class="h3">Sliders</h3>
 		<div class={previewCardClasses}>
@@ -273,7 +273,7 @@
 	</section>
 
 	<!-- Switch -->
-	<!-- https://next.skeleton.dev/docs/components/switch/svelte -->
+	<!-- https://skeleton.dev/docs/components/switch/svelte -->
 	<section class="space-y-4">
 		<h3 class="h3">Switches</h3>
 		<div class={previewCardClasses}>
@@ -298,7 +298,7 @@
 	<!-- -------------------------------------------------------- -->
 
 	<!-- Headings -->
-	<!-- https://next.skeleton.dev/docs/design/typography#headings -->
+	<!-- https://skeleton.dev/docs/design/typography#headings -->
 	<section class="space-y-4">
 		<h3 class="h3">Headings</h3>
 		<div class={previewCardClasses}>
@@ -314,7 +314,7 @@
 	</section>
 
 	<!-- Blockquote -->
-	<!-- https://next.skeleton.dev/docs/design/typography#blockquotes -->
+	<!-- https://skeleton.dev/docs/design/typography#blockquotes -->
 	<section class="space-y-4">
 		<h3 class="h3">Blockquote</h3>
 		<div class={previewCardClasses}>
@@ -328,7 +328,7 @@
 	</section>
 
 	<!-- Code -->
-	<!-- https://next.skeleton.dev/docs/design/typography#code -->
+	<!-- https://skeleton.dev/docs/design/typography#code -->
 	<section class="space-y-4">
 		<h3 class="h3">Code</h3>
 		<div class={previewCardClasses}>
@@ -337,7 +337,7 @@
 	</section>
 
 	<!-- Keyboard -->
-	<!-- https://next.skeleton.dev/docs/design/typography#keyboard -->
+	<!-- https://skeleton.dev/docs/design/typography#keyboard -->
 	<section class="space-y-4">
 		<h3 class="h3">Keyboard</h3>
 		<div class={previewCardClasses}>
@@ -346,7 +346,7 @@
 	</section>
 
 	<!-- Pre-Formatted -->
-	<!-- https://next.skeleton.dev/docs/design/typography#pre-formatted -->
+	<!-- https://skeleton.dev/docs/design/typography#pre-formatted -->
 	<section class="space-y-4">
 		<h3 class="h3">Pre-Formatted</h3>
 		<div class={previewCardClasses}>
@@ -361,7 +361,7 @@
 	<!-- -------------------------------------------------------- -->
 
 	<!-- Alerts -->
-	<!-- https://next.skeleton.dev/docs/guides/cookbook/alerts/ -->
+	<!-- https://skeleton.dev/docs/guides/cookbook/alerts/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Alerts</h3>
 		<div class={previewCardClasses}>
@@ -389,7 +389,7 @@
 	</section>
 
 	<!-- Breadcrumbs -->
-	<!-- https://next.skeleton.dev/docs/guides/cookbook/breadcrumbs/ -->
+	<!-- https://skeleton.dev/docs/guides/cookbook/breadcrumbs/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Breadcrumbs</h3>
 		<div class={previewCardClasses}>
@@ -404,7 +404,7 @@
 	</section>
 
 	<!-- Image Layouts -->
-	<!-- https://next.skeleton.dev/docs/guides/cookbook/image-layouts/ -->
+	<!-- https://skeleton.dev/docs/guides/cookbook/image-layouts/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Image Layouts</h3>
 		<div class={previewCardClasses}>
