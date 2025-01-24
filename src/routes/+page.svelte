@@ -1,5 +1,5 @@
 <script>
-	import { Avatar } from '@skeletonlabs/skeleton-svelte';
+	import { Avatar, ProgressRing, Segment, Slider, Switch } from '@skeletonlabs/skeleton-svelte';
 
 	// Common Class Lists
 	const headerClasses = 'space-y-2 pb-2 border-b-2 border-surface-800-200';
@@ -59,6 +59,7 @@
 	</section>
 
 	<!-- Buttons -->
+	<!-- https://next.skeleton.dev/docs/tailwind/buttons -->
 	<section class="space-y-4">
 		<h3 class="h3">Buttons</h3>
 		<div class={previewCardClasses}>
@@ -95,6 +96,7 @@
 	</section>
 
 	<!-- Card -->
+	<!-- https://next.skeleton.dev/docs/tailwind/cards -->
 	<section class="space-y-4">
 		<h3 class="h3">Card</h3>
 		<div class={previewCardClasses}>
@@ -128,6 +130,7 @@
 	</section>
 
 	<!-- Forms -->
+	<!-- https://next.skeleton.dev/docs/tailwind/forms -->
 	<section class="space-y-4">
 		<h3 class="h3">Forms</h3>
 		<div class={previewCardClasses}>
@@ -226,10 +229,67 @@
 		</div>
 	</section>
 
-	<!-- TODO: Add <ProgressRing> -->
-	<!-- TODO: Add <Segment> -->
-	<!-- TODO: Add <Slider> -->
-	<!-- TODO: Add <Switch> -->
+	<!-- ProgressRing -->
+	<!-- https://next.skeleton.dev/docs/components/progress-ring/svelte -->
+	<section class="space-y-4">
+		<h3 class="h3">Progress Rings</h3>
+		<div class={previewCardClasses}>
+			<div class="flex items-center md:space-x-16">
+				<ProgressRing classes="hidden md:block" value={25} max={100} />
+				<ProgressRing value={25} max={100} showLabel meterStroke="stroke-success-500"/>
+				<ProgressRing classes="hidden md:block" value={null} meterStroke="stroke-error-500"/>
+			</div>
+		</div>
+	</section>
+	
+	<!-- <Segment -->
+	<!-- https://next.skeleton.dev/docs/components/segment/svelte -->
+	<section class="space-y-4">
+		<h3 class="h3">Segment Controls</h3>
+		<div class={previewCardClasses}>
+			<div class="flex items-center md:space-x-16">
+				<Segment name="size" value="xs">
+					<Segment.Item value="xs">xs</Segment.Item>
+					<Segment.Item value="sm">sm</Segment.Item>
+					<Segment.Item value="md">md</Segment.Item>
+					<Segment.Item value="lg">lg</Segment.Item>
+					<Segment.Item value="xl">xl</Segment.Item>
+				  </Segment>
+			</div>
+		</div>
+	</section>
+
+	<!-- Slider -->
+	<!-- https://next.skeleton.dev/docs/components/slider/svelte -->
+	<section class="space-y-4">
+		<h3 class="h3">Sliders</h3>
+		<div class={previewCardClasses}>
+			<div class="space-y-8 w-full max-w-4xl">
+				<Slider value={[50]} meterBg="bg-primary-500" thumbRingColor="ring-primary-500" />
+				<Slider value={[25, 50]} meterBg="bg-secondary-500" thumbRingColor="ring-secondary-500" />
+				<Slider value={[50]} markers={[25, 50, 75]} meterBg="bg-tertiary-500" thumbRingColor="ring-tertiary-500" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Switch -->
+	<!-- https://next.skeleton.dev/docs/components/switch/svelte -->
+	<section class="space-y-4">
+		<h3 class="h3">Switches</h3>
+		<div class={previewCardClasses}>
+			<div class="flex space-x-8">
+				<Switch name="example" />
+				<Switch name="icons" controlActive="bg-secondary-500">
+					{#snippet inactiveChild()}🌙{/snippet}
+					{#snippet activeChild()}☀️{/snippet}
+				</Switch>
+				<Switch name="compact" controlWidth="w-12" controlActive="preset-filled-tertiary-500" compact>
+					{#snippet inactiveChild()}💀{/snippet}
+					{#snippet activeChild()}👨{/snippet}
+				</Switch>
+			</div>
+		</div>
+	</section>
 
 	<!-- -------------------------------------------------------- -->
 	<header class={headerClasses}>
@@ -238,6 +298,7 @@
 	<!-- -------------------------------------------------------- -->
 
 	<!-- Headings -->
+	<!-- https://next.skeleton.dev/docs/design/typography#headings -->
 	<section class="space-y-4">
 		<h3 class="h3">Headings</h3>
 		<div class={previewCardClasses}>
@@ -253,6 +314,7 @@
 	</section>
 
 	<!-- Blockquote -->
+	<!-- https://next.skeleton.dev/docs/design/typography#blockquotes -->
 	<section class="space-y-4">
 		<h3 class="h3">Blockquote</h3>
 		<div class={previewCardClasses}>
@@ -266,6 +328,7 @@
 	</section>
 
 	<!-- Code -->
+	<!-- https://next.skeleton.dev/docs/design/typography#code -->
 	<section class="space-y-4">
 		<h3 class="h3">Code</h3>
 		<div class={previewCardClasses}>
@@ -274,6 +337,7 @@
 	</section>
 
 	<!-- Keyboard -->
+	<!-- https://next.skeleton.dev/docs/design/typography#keyboard -->
 	<section class="space-y-4">
 		<h3 class="h3">Keyboard</h3>
 		<div class={previewCardClasses}>
@@ -282,6 +346,7 @@
 	</section>
 
 	<!-- Pre-Formatted -->
+	<!-- https://next.skeleton.dev/docs/design/typography#pre-formatted -->
 	<section class="space-y-4">
 		<h3 class="h3">Pre-Formatted</h3>
 		<div class={previewCardClasses}>
@@ -296,6 +361,7 @@
 	<!-- -------------------------------------------------------- -->
 
 	<!-- Alerts -->
+	<!-- https://next.skeleton.dev/docs/guides/cookbook/alerts/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Alerts</h3>
 		<div class={previewCardClasses}>
@@ -323,6 +389,7 @@
 	</section>
 
 	<!-- Breadcrumbs -->
+	<!-- https://next.skeleton.dev/docs/guides/cookbook/breadcrumbs/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Breadcrumbs</h3>
 		<div class={previewCardClasses}>
@@ -337,6 +404,7 @@
 	</section>
 
 	<!-- Image Layouts -->
+	<!-- https://next.skeleton.dev/docs/guides/cookbook/image-layouts/ -->
 	<section class="space-y-4">
 		<h3 class="h3">Image Layouts</h3>
 		<div class={previewCardClasses}>
