@@ -4,12 +4,14 @@
 	// Common Class Lists
 	const headerClasses = 'space-y-2 pb-2 border-b-2 border-surface-800-200';
 	const previewCardClasses = 'card bg-noise bg-surface-50-950 border-[1px] border-surface-200-800 flex justify-center items-center p-8';
+
+	let color = $state('#bada55');
 </script>
 
 <header class="sticky top-0 z-50 bg-surface-50-950 shadow-xl">
 	<div class="container mx-auto grid grid-cols-[auto_1fr_auto] items-center gap-10 p-4">
 		<h1 class="h3">Skeleton</h1>
-		<p class="text-xs opacity-60">Test various feature provided by Skeleton.</p>
+		<p class="text-xs opacity-60 collapse md:visible">Test various feature provided by Skeleton.</p>
 		<a href="https://skeleton.dev" target="_blank" class="btn preset-filled">Documentation</a>
 	</div>
 </header>
@@ -184,10 +186,9 @@
 						<progress class="progress" value="50" max="100"></progress>
 					</label>
 					<!-- Color -->
-					<!-- TODO: convert to mini-component for reactive value -->
 					<div class="grid grid-cols-[auto_1fr] gap-2">
-						<input class="input" type="color" value="#bada55" />
-						<input class="input" type="text" value="#bada55" readonly tabindex="-1" />
+						<input class="input" type="color" bind:value={color} />
+						<input class="input" type="text" bind:value={color} readonly tabindex="-1" />
 					</div>
 				</fieldset>
 			</form>
@@ -279,13 +280,9 @@
 		<div class={previewCardClasses}>
 			<div class="flex space-x-8">
 				<Switch name="example" />
-				<Switch name="icons" controlActive="bg-secondary-500">
-					{#snippet inactiveChild()}🌙{/snippet}
-					{#snippet activeChild()}☀️{/snippet}
-				</Switch>
 				<Switch name="compact" controlWidth="w-12" controlActive="preset-filled-tertiary-500" compact>
-					{#snippet inactiveChild()}💀{/snippet}
-					{#snippet activeChild()}👨{/snippet}
+					{#snippet inactiveChild()}&#x26D4;{/snippet}
+					{#snippet activeChild()}&#x2705;{/snippet}
 				</Switch>
 			</div>
 		</div>
