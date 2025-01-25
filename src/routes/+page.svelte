@@ -237,12 +237,12 @@
 		<div class={previewCardClasses}>
 			<div class="flex items-center md:space-x-16">
 				<ProgressRing classes="hidden md:block" value={25} max={100} />
-				<ProgressRing value={25} max={100} showLabel meterStroke="stroke-success-500"/>
-				<ProgressRing classes="hidden md:block" value={null} meterStroke="stroke-error-500"/>
+				<ProgressRing value={25} max={100} showLabel meterStroke="stroke-success-500" />
+				<ProgressRing classes="hidden md:block" value={null} meterStroke="stroke-error-500" />
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- <Segment -->
 	<!-- https://skeleton.dev/docs/components/segment/svelte -->
 	<section class="space-y-4">
@@ -255,7 +255,7 @@
 					<Segment.Item value="md">md</Segment.Item>
 					<Segment.Item value="lg">lg</Segment.Item>
 					<Segment.Item value="xl">xl</Segment.Item>
-				  </Segment>
+				</Segment>
 			</div>
 		</div>
 	</section>
@@ -276,14 +276,10 @@
 	<!-- Switch -->
 	<!-- https://skeleton.dev/docs/components/switch/svelte -->
 	<section class="space-y-4">
-		<h3 class="h3">Switches</h3>
+		<h3 class="h3">Switch</h3>
 		<div class={previewCardClasses}>
 			<div class="flex space-x-8">
 				<Switch name="example" />
-				<Switch name="compact" controlWidth="w-12" controlActive="preset-filled-tertiary-500" compact>
-					{#snippet inactiveChild()}&#x26D4;{/snippet}
-					{#snippet activeChild()}&#x2705;{/snippet}
-				</Switch>
 			</div>
 		</div>
 	</section>
