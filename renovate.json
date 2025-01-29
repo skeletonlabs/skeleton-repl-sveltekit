@@ -1,6 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":pinOnlyDevDependencies"
+  ],
+  "packageRules": [
+    {
+      "description": "devDependencies package update check",
+      "matchPackageNames": ["*"],
+      "groupName": "devDependencies",
+      "schedule": ["* * 1 * *"]
+    },
+    {
+      "description": "dependencies package update check",
+      "matchPackageNames": ["*"],
+      "groupName": "dependencies",
+      "schedule": ["* * 1 * *"]
+    }
   ]
 }
